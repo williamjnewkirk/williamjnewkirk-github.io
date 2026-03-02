@@ -74,7 +74,19 @@ window.onload = () => {
         toggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+        // close menu when a link is selected
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
     }
+    // clear active class when resizing wider than breakpoint
+    window.addEventListener('resize', () => {
+        if(window.innerWidth > 768 && navLinks) {
+            navLinks.classList.remove('active');
+        }
+    });
 };
 
 // --- 2. Number Counter Animation ---

@@ -109,8 +109,8 @@ nav {
     .profile-pic { width: 140px; height: 140px; }
 }
 
-/* smaller header adjustments */
-@media (max-width: 600px) {
+/* smaller header adjustments / hamburger */
+@media (max-width: 768px) {
     nav {
         flex-wrap: wrap;
         padding: 10px 15px;
@@ -121,7 +121,6 @@ nav {
         width: 100%;
         justify-content: center;
         gap: 12px;
-        flex-wrap: wrap;
         margin-top: 8px;
         display: none;
         flex-direction: column;
@@ -130,12 +129,15 @@ nav {
     .nav-links.active { display: flex; }
     .nav-links a {
         font-size: 0.9rem;
-        padding: 5px 0;
+        padding: 8px 0;
     }
 }
 
-/* menu toggle hidden by default */
-.menu-toggle { display: none; }
+/* menu toggle hidden by default on larger screens */
+@media (min-width: 769px) {
+    .menu-toggle { display: none; }
+    .nav-links { display: flex !important; }
+}
 
 /* Hero Section */
 .hero-card {
