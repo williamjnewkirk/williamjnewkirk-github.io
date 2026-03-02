@@ -67,6 +67,14 @@ function typeTerminal() {
 // Start typing when page loads
 window.onload = () => {
     animateNumbers();
+    // hamburger menu toggle
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if(toggle && navLinks) {
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 };
 
 // --- 2. Number Counter Animation ---
