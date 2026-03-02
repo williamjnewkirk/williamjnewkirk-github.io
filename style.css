@@ -109,6 +109,25 @@ nav {
     .profile-pic { width: 140px; height: 140px; }
 }
 
+/* smaller header adjustments */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+    .logo { font-size: 1.2rem; }
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
 /* Hero Section */
 .hero-card {
     grid-row: span 2;
