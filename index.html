@@ -3,165 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William Newkirk | CS &amp; Business</title>
+    <meta name="description" content="William Newkirk — Business & Computer Science student at Washington University in St. Louis, NCAA Division III student-athlete, and builder.">
+    <meta name="author" content="William Newkirk">
+    <meta name="theme-color" content="#0b1120">
+    <meta property="og:title" content="William Newkirk — Business & Computer Science @ WashU">
+    <meta property="og:description" content="Student-athlete, builder, and aspiring entrepreneur from Colorado.">
+    <meta property="og:type" content="website">
+    <title>William Newkirk | Business &amp; Computer Science @ WashU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div id="scroll-progress"></div>
     <canvas id="neural-net"></canvas>
 
     <div class="container">
         <nav class="glass-panel">
-            <div class="logo">Will Newkirk</div>
-            <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">&lt;</span>WN<span class="logo-bracket">/&gt;</span>
+            </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#stats">Stats</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#awards">Honors</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            </div>
         </nav>
 
-        <main class="grid-layout">
-            <section id="home" class="glass-panel hero-card">
-                <div class="profile-container">
-                    <img src="Images/Professional Portrait.jpg" alt="William Newkirk" class="profile-pic">
+        <main>
+            <section class="hero glass-panel reveal">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="gradient">William Newkirk</span>.</h1>
+                    <p class="lede">
+                        I'm a Business &amp; Computer Science student at Washington University in St. Louis,
+                        an NCAA Division III student-athlete on the Cross Country and Track teams, and a builder
+                        who likes turning ideas into shipping products.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">WashU '29</span>
+                        <span class="tag green">NCAA D-III Athlete</span>
+                        <span class="tag amber">Summa Cum Laude</span>
+                        <span class="tag">Builder</span>
+                    </div>
+                    <div class="cta-row">
+                        <a href="about.html" class="btn btn-primary"><i class="fas fa-user"></i> About Me</a>
+                        <a href="contact.html" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="status-badge">
-                    <span class="pulse"></span> Open to Work
-                </div>
-                <h1>William Newkirk</h1>
-                <h2 class="typing-effect">BS Business &amp; Comp Sci @ WashU '29</h2>
-                <div class="tags">
-                    <span class="tag">NCAA Athlete</span>
-                    <span class="tag">Full Stack Development</span>
-                    <span class="tag">Entrepreneurship</span>
-                </div>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/william-newkirk-341744380/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email Contact"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/williamjnewkirk" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <div class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="Images/Professional Portrait.jpg" alt="Portrait of William Newkirk">
+                    </div>
+                    <div class="status-badge"><span class="pulse"></span> Open to Opportunities</div>
                 </div>
             </section>
 
-            <section id="stats" class="glass-panel dashboard">
-                <h3><i class="fas fa-chart-pie"></i> Academic Metrics &amp; Skills</h3>
-                <div class="stat-grid">
+            <section class="page-section reveal" aria-labelledby="quick-stats">
+                <h2 id="quick-stats" class="section-heading">
+                    <i class="fas fa-chart-line"></i>
+                    Highlights
+                    <span class="accent-bar"></span>
+                </h2>
+                <div class="stat-strip">
                     <div class="stat-box">
-                        <span class="stat-num" data-target="3.6">3.7</span>
+                        <span class="stat-num" data-target="3.7">0</span>
                         <span class="stat-label">WashU GPA</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-num" data-target="4.0">4.4</span>
-                        <span class="stat-label">HS GPA</span>
+                        <span class="stat-num" data-target="4.4">0</span>
+                        <span class="stat-label">HS GPA (Weighted)</span>
                     </div>
-                </div>
-                <div class="skills">
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Java / Python</span>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="6">0</span>
+                        <span class="stat-label">HS Class Rank /286</span>
                     </div>
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Web Dev (HTML/CSS)</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Leadership</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Entrepreneurship</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Microsoft Excel</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Business Analytics</span>
+                    <div class="stat-box">
+                        <span class="stat-num" data-target="5">0</span>
+                        <span class="stat-label">Major Honors</span>
                     </div>
                 </div>
             </section>
 
-            <section id="experience" class="glass-panel experience-section">
-                <h3><i class="fas fa-briefcase"></i> Experience</h3>
-                <div class="experience-list">
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>Bear Cubs Running Club</h4>
-                            <span class="date">Sept 2025 - Present</span>
-                        </div>
-                        <p class="role">Volunteer</p>
-                        <p class="description">Contributing to student-athlete community engagement and athletic program support at Washington University.</p>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>El Pomar Institute</h4>
-                            <span class="date">Summer 2023</span>
-                        </div>
-                        <p class="role">Web Design Intern</p>
-                        <p class="description">Designed and developed website components for nonprofit organization focused on leadership and community service.</p>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4>Broadmoor Cog Railway</h4>
-                            <span class="date">Summer 2023</span>
-                        </div>
-                        <p class="role">Ticket Agent</p>
-                        <p class="description">Provided customer service and ticket sales at historic mountain railway in Colorado Springs.</p>
-                    </div>
+            <section class="page-section reveal" aria-labelledby="explore">
+                <h2 id="explore" class="section-heading">
+                    <i class="fas fa-compass"></i>
+                    Explore
+                    <span class="accent-bar"></span>
+                </h2>
+                <div class="feature-grid">
+                    <article class="feature-card glass-panel hover-lift">
+                        <div class="feature-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3>About Me</h3>
+                        <p>Background, education at WashU and Cheyenne Mountain HS, and what drives me.</p>
+                        <a href="about.html" class="card-link">Read more</a>
+                    </article>
+                    <article class="feature-card glass-panel hover-lift green">
+                        <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Experience</h3>
+                        <p>Internships, work, and volunteering — from El Pomar Institute to Bear Cubs Running Club.</p>
+                        <a href="experience.html" class="card-link">View timeline</a>
+                    </article>
+                    <article class="feature-card glass-panel hover-lift amber">
+                        <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                        <h3>Achievements</h3>
+                        <p>Scholarships, academic honors, and athletic milestones including All-American honors.</p>
+                        <a href="achievements.html" class="card-link">See trophy case</a>
+                    </article>
                 </div>
             </section>
 
-            <section id="awards" class="glass-panel awards-case">
-                <h3><i class="fas fa-trophy"></i> Trophy Case</h3>
-                <div class="awards-list">
-                    <div class="award-item">
-                        <i class="fas fa-book-open"></i>
-                        <div>
-                            <h4>Folds of Honor Scholarship</h4>
-                            <p>2025</p>
+            <section class="page-section reveal" aria-labelledby="skills">
+                <h2 id="skills" class="section-heading">
+                    <i class="fas fa-code"></i>
+                    Skills
+                    <span class="accent-bar"></span>
+                </h2>
+                <div class="glass-panel">
+                    <div class="skills-columns">
+                        <div class="skills-group">
+                            <h3 class="skills-group-title">Technical</h3>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-check"></i> Java</li>
+                                <li><i class="fas fa-check"></i> Python</li>
+                                <li><i class="fas fa-check"></i> HTML, CSS &amp; JavaScript</li>
+                                <li><i class="fas fa-check"></i> Git &amp; GitHub</li>
+                                <li><i class="fas fa-check"></i> Web Development</li>
+                                <li><i class="fas fa-check"></i> Microsoft Excel</li>
+                            </ul>
                         </div>
-                    </div>
-                     <div class="award-item">
-                        <i class="fas fa-book-open"></i>
-                        <div>
-                            <h4>Tailhook Educational Foundation Scholarship Winner</h4>
-                            <p>2025</p>
-                        </div>
-                    </div>
-                    <div class="award-item">
-                        <i class="fas fa-certificate bronze"></i>
-                        <div>
-                            <h4>National Merit Commended Scholar</h4>
-                            <p>2024</p>
-                        </div>
-                    </div>
-                    <div class="award-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <h4>AP Scholar with Distinction</h4>
-                            <p>2024</p>
+                        <div class="skills-group">
+                            <h3 class="skills-group-title">Business &amp; Professional</h3>
+                            <ul class="skills-list">
+                                <li><i class="fas fa-check"></i> Business Analytics</li>
+                                <li><i class="fas fa-check"></i> Economics &amp; Statistics</li>
+                                <li><i class="fas fa-check"></i> Entrepreneurship</li>
+                                <li><i class="fas fa-check"></i> Leadership &amp; Teamwork</li>
+                                <li><i class="fas fa-check"></i> Customer Service</li>
+                                <li><i class="fas fa-check"></i> Management</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="glass-panel contact-section">
-                <h3><i class="fas fa-envelope"></i> Get In Touch</h3>
-                <p>I'd love to connect! Reach out via email or connect on LinkedIn.</p>
-                <div class="contact-links">
-                    <a href="mailto:williamnewkirk2025@gmail.com" class="contact-btn">Send Email</a>
-                    <a href="https://www.linkedin.com/in/william-newkirk-341744380/" target="_blank" class="contact-btn">LinkedIn</a>
+            <section class="page-section reveal">
+                <div class="glass-panel hover-lift cta-panel">
+                    <h2 class="section-title">Let's build something.</h2>
+                    <p class="lead cta-copy">
+                        Looking for an intern, teammate, collaborator, or just want to connect? I'd love to hear from you.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send a Message</a>
                 </div>
             </section>
-
-            <footer class="glass-panel footer-section">
-                <p>&copy; 2026 William Newkirk | Built with HTML, CSS, JS.</p>
-            </footer>
         </main>
+
+        <footer class="site-footer glass-panel">
+            <div class="footer-row">
+                <p>&copy; 2026 William Newkirk · Built with HTML, CSS &amp; JS</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="footer-muted">Colorado Springs → St. Louis · always learning</p>
+        </footer>
+
+        <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
     </div>
 
     <script src="script.js"></script>
