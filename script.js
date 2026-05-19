@@ -44,9 +44,18 @@
             feedback.classList.add('show');
         }
 
+        // Strip control characters (incl. CR/LF) and cap length to defend
+        // against mailto header injection via the subject line.
+        function cleanHeader(s, max) {
+            return s.replace(/[\r\n\t\x00-\x1f\x7f]/g, ' ').trim().slice(0, max);
+        }
+
         function mailtoFallback(name, email, message) {
-            const subject = encodeURIComponent(`Site contact from ${name}`);
-            const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+            const safeName = cleanHeader(name, 80);
+            const safeEmail = cleanHeader(email, 120);
+            const safeBody = message.slice(0, 4000);
+            const subject = encodeURIComponent(`Site contact from ${safeName}`);
+            const body = encodeURIComponent(`${safeBody}\n\n— ${safeName} (${safeEmail})`);
             window.location.href = `mailto:williamnewkirk2025@gmail.com?subject=${subject}&body=${body}`;
         }
 

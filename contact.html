@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; base-uri 'self'; frame-ancestors 'none'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="description" content="Contact William Newkirk.">
     <title>Contact — William Newkirk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +34,8 @@
 
             <ul class="contact-info">
                 <li><span class="label">Email</span><a href="mailto:williamnewkirk2025@gmail.com">williamnewkirk2025@gmail.com</a></li>
-                <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener">william-newkirk</a></li>
-                <li><span class="label">GitHub</span><a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener">@williamjnewkirk</a></li>
+                <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener noreferrer">william-newkirk</a></li>
+                <li><span class="label">GitHub</span><a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener noreferrer">@williamjnewkirk</a></li>
             </ul>
         </section>
 
@@ -50,15 +52,15 @@
                   method="POST">
                 <div class="form-row">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <input type="text" id="name" name="name" autocomplete="name" maxlength="80" required>
                 </div>
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
                 </div>
                 <div class="form-row">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" maxlength="4000" required></textarea>
                 </div>
                 <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
                 <div class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></div>
