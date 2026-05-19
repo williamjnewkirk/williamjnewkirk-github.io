@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with William Newkirk — email, LinkedIn, GitHub, and a contact form.">
-    <meta name="theme-color" content="#0b1120">
-    <title>Contact | William Newkirk</title>
+    <meta name="description" content="Contact William Newkirk.">
+    <title>Contact — William Newkirk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="scroll-progress"></div>
-    <canvas id="neural-net"></canvas>
-
-    <div class="container">
-        <nav class="glass-panel">
-            <a href="index.html" class="logo">
-                <span class="logo-bracket">&lt;</span>WN<span class="logo-bracket">/&gt;</span>
-            </a>
+    <header class="site-header">
+        <a href="index.html" class="site-name">William Newkirk</a>
+        <nav>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,105 +21,56 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="nav-actions">
-                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
-            </div>
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">Menu</button>
         </nav>
+    </header>
 
-        <main>
-            <header class="page-header reveal">
-                <h1>Contact</h1>
-                <p>Whether you have a project, opportunity, or just want to connect — feel free to reach out.</p>
-            </header>
+    <main class="wrap">
+        <section class="section">
+            <h1>Contact</h1>
+            <p>Feel free to reach out by email or on LinkedIn, or send a message using the form below.</p>
 
-            <section class="page-section reveal">
-                <div class="contact-grid">
-                    <div>
-                        <h2 class="section-heading"><i class="fas fa-address-card"></i> Direct<span class="accent-bar"></span></h2>
-                        <div class="contact-list">
-                            <a class="contact-row" href="mailto:williamnewkirk2025@gmail.com">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <span class="row-label">Email</span><br>
-                                    <span class="row-value">williamnewkirk2025@gmail.com</span>
-                                </div>
-                            </a>
-                            <a class="contact-row" href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin-in"></i>
-                                <div>
-                                    <span class="row-label">LinkedIn</span><br>
-                                    <span class="row-value">william-newkirk</span>
-                                </div>
-                            </a>
-                            <a class="contact-row" href="https://github.com/williamjnewkirk" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                                <div>
-                                    <span class="row-label">GitHub</span><br>
-                                    <span class="row-value">@williamjnewkirk</span>
-                                </div>
-                            </a>
-                            <div class="contact-row">
-                                <i class="fas fa-location-dot"></i>
-                                <div>
-                                    <span class="row-label">Based In</span><br>
-                                    <span class="row-value">St. Louis, MO · Colorado Springs, CO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <ul class="contact-info">
+                <li><span class="label">Email</span><a href="mailto:williamnewkirk2025@gmail.com">williamnewkirk2025@gmail.com</a></li>
+                <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener">william-newkirk</a></li>
+                <li><span class="label">GitHub</span><a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener">@williamjnewkirk</a></li>
+            </ul>
+        </section>
 
-                    <div>
-                        <h2 class="section-heading"><i class="fas fa-paper-plane"></i> Send a Message<span class="accent-bar"></span></h2>
-                        <form id="contactForm" class="contact-form glass-panel"
-                              action="https://formspree.io/f/mbdwezpw"
-                              method="POST">
-                            <div class="form-row">
-                                <label for="name">Your name</label>
-                                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Jane Doe">
-                            </div>
-                            <div class="form-row">
-                                <label for="email">Email address</label>
-                                <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
-                            </div>
-                            <div class="form-row">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
-                            </div>
-                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
-                            <div class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></div>
-                            <button type="submit" class="btn btn-primary" id="contactSubmit"><i class="fas fa-paper-plane"></i> Send</button>
-                        </form>
-                    </div>
+        <section class="section">
+            <h2>Send a message</h2>
+            <!--
+              Form posts to Formspree. To activate:
+              1. Sign up at https://formspree.io (free) with williamnewkirk2025@gmail.com
+              2. Create a new form, copy its endpoint URL (looks like https://formspree.io/f/xpwabcde)
+              3. Replace YOUR_FORM_ID below with that ID
+            -->
+            <form id="contactForm" class="contact-form"
+                  action="https://formspree.io/f/YOUR_FORM_ID"
+                  method="POST">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
                 </div>
-            </section>
-
-            <section class="page-section reveal">
-                <div class="glass-panel hover-lift cta-panel">
-                    <h2 class="section-title">Prefer to browse first?</h2>
-                    <p class="lead cta-copy">Check out the rest of the site to learn more about my background and work.</p>
-                    <div class="cta-row center">
-                        <a href="about.html" class="btn btn-ghost"><i class="fas fa-user"></i> About</a>
-                        <a href="experience.html" class="btn btn-ghost"><i class="fas fa-briefcase"></i> Experience</a>
-                        <a href="achievements.html" class="btn btn-ghost"><i class="fas fa-trophy"></i> Achievements</a>
-                    </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
-            </section>
-        </main>
-
-        <footer class="site-footer glass-panel">
-            <div class="footer-row">
-                <p>&copy; 2026 William Newkirk · Built with HTML, CSS &amp; JS</p>
-                <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
-            </div>
-        </footer>
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
+                <div class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></div>
+                <button type="submit" class="btn" id="contactSubmit">Send</button>
+            </form>
+        </section>
+    </main>
 
-        <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-    </div>
+    <footer class="site-footer">
+        <span>&copy; 2026 William Newkirk</span>
+        <span>Colorado Springs &middot; St. Louis</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>

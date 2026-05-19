@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="William Newkirk's achievements — academic honors, scholarships, and athletic milestones.">
-    <meta name="theme-color" content="#0b1120">
-    <title>Achievements | William Newkirk</title>
+    <meta name="description" content="William Newkirk's achievements — scholarships, honors, and athletic awards.">
+    <title>Achievements — William Newkirk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="scroll-progress"></div>
-    <canvas id="neural-net"></canvas>
-
-    <div class="container">
-        <nav class="glass-panel">
-            <a href="index.html" class="logo">
-                <span class="logo-bracket">&lt;</span>WN<span class="logo-bracket">/&gt;</span>
-            </a>
+    <header class="site-header">
+        <a href="index.html" class="site-name">William Newkirk</a>
+        <nav>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,146 +21,39 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="nav-actions">
-                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
-            </div>
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">Menu</button>
         </nav>
+    </header>
 
-        <main>
-            <header class="page-header reveal">
-                <h1>Achievements</h1>
-                <p>Academic honors, scholarships, and athletic milestones.</p>
-            </header>
+    <main class="wrap">
+        <section class="section">
+            <h1>Achievements</h1>
 
-            <section class="page-section reveal" aria-labelledby="ach-stats">
-                <h2 id="ach-stats" class="section-heading">
-                    <i class="fas fa-chart-pie"></i> Highlights<span class="accent-bar"></span>
-                </h2>
-                <div class="stat-strip">
-                    <div class="stat-box">
-                        <span class="stat-num" data-target="2">0</span>
-                        <span class="stat-label">Major Scholarships</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num" data-target="2">0</span>
-                        <span class="stat-label">National Honors</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num" data-target="1">0</span>
-                        <span class="stat-label">All-American Title</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-num" data-target="6">0</span>
-                        <span class="stat-label">HS Rank /286</span>
-                    </div>
-                </div>
-            </section>
+            <h2>Scholarships</h2>
+            <ul class="awards">
+                <li><span class="name">Folds of Honor Scholarship</span><span class="when">2025</span></li>
+                <li><span class="name">Tailhook Educational Foundation Scholarship</span><span class="when">2025</span></li>
+            </ul>
 
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-award"></i> Scholarships<span class="accent-bar"></span></h2>
-                <div class="awards-grid">
-                    <article class="award-card">
-                        <div class="award-icon"><i class="fas fa-medal"></i></div>
-                        <div>
-                            <h3>Folds of Honor Scholarship</h3>
-                            <span class="award-year">2025</span>
-                            <p class="award-desc">National scholarship awarded to family members of fallen and disabled military service members.</p>
-                        </div>
-                    </article>
-                    <article class="award-card">
-                        <div class="award-icon"><i class="fas fa-anchor"></i></div>
-                        <div>
-                            <h3>Tailhook Educational Foundation Scholarship</h3>
-                            <span class="award-year">2025</span>
-                            <p class="award-desc">Awarded to children of U.S. Naval Aviation personnel pursuing higher education.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
+            <h2>Academic Honors</h2>
+            <ul class="awards">
+                <li><span class="name">Summa Cum Laude &mdash; Cheyenne Mountain HS (6/286)</span><span class="when">2025</span></li>
+                <li><span class="name">National Merit Commended Scholar</span><span class="when">2024</span></li>
+                <li><span class="name">AP Scholar with Distinction</span><span class="when">2024</span></li>
+                <li><span class="name">National Honor Society</span><span class="when">2022 &ndash; 2025</span></li>
+            </ul>
 
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-book-open"></i> Academic Honors<span class="accent-bar"></span></h2>
-                <div class="awards-grid">
-                    <article class="award-card">
-                        <div class="award-icon cyan"><i class="fas fa-star"></i></div>
-                        <div>
-                            <h3>National Merit Commended Scholar</h3>
-                            <span class="award-year">2024</span>
-                            <p class="award-desc">Top-scoring PSAT recognition placing among the nation's strongest academic performers.</p>
-                        </div>
-                    </article>
-                    <article class="award-card">
-                        <div class="award-icon cyan"><i class="fas fa-graduation-cap"></i></div>
-                        <div>
-                            <h3>AP Scholar with Distinction</h3>
-                            <span class="award-year">2024</span>
-                            <p class="award-desc">College Board honor for high performance across multiple AP exams.</p>
-                        </div>
-                    </article>
-                    <article class="award-card">
-                        <div class="award-icon cyan"><i class="fas fa-crown"></i></div>
-                        <div>
-                            <h3>Summa Cum Laude Graduate</h3>
-                            <span class="award-year">May 2025</span>
-                            <p class="award-desc">Highest Latin honor at Cheyenne Mountain High School — graduated 6/286 in class rank.</p>
-                        </div>
-                    </article>
-                    <article class="award-card">
-                        <div class="award-icon cyan"><i class="fas fa-user-graduate"></i></div>
-                        <div>
-                            <h3>National Honor Society</h3>
-                            <span class="award-year">2022 – 2025</span>
-                            <p class="award-desc">Member of NHS at Cheyenne Mountain High School for academic excellence and service.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
+            <h2>Athletic Honors</h2>
+            <ul class="awards">
+                <li><span class="name">Nike Indoor All-American</span><span class="when">Winter 2025</span></li>
+            </ul>
+        </section>
+    </main>
 
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-running"></i> Athletic Honors<span class="accent-bar"></span></h2>
-                <div class="awards-grid">
-                    <article class="award-card">
-                        <div class="award-icon green"><i class="fas fa-medal"></i></div>
-                        <div>
-                            <h3>Nike Indoor All-American</h3>
-                            <span class="award-year">Winter 2025</span>
-                            <p class="award-desc">National recognition for top-tier performance at the Nike Indoor Nationals — a marquee high-school track championship.</p>
-                        </div>
-                    </article>
-                    <article class="award-card">
-                        <div class="award-icon green"><i class="fas fa-people-group"></i></div>
-                        <div>
-                            <h3>NCAA Division III Student-Athlete</h3>
-                            <span class="award-year">2025 – Present</span>
-                            <p class="award-desc">Cross Country and Track &amp; Field for Washington University in St. Louis.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="page-section reveal">
-                <div class="glass-panel hover-lift cta-panel">
-                    <h2 class="section-title">More to come.</h2>
-                    <p class="lead cta-copy">I'm just getting started. Follow along — or let's connect.</p>
-                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer glass-panel">
-            <div class="footer-row">
-                <p>&copy; 2026 William Newkirk · Built with HTML, CSS &amp; JS</p>
-                <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </footer>
-
-        <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-    </div>
+    <footer class="site-footer">
+        <span>&copy; 2026 William Newkirk</span>
+        <span>Colorado Springs &middot; St. Louis</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>

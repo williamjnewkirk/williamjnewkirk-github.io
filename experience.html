@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="William Newkirk's experience — internships, work, athletics, and community service from 2021 to today.">
-    <meta name="theme-color" content="#0b1120">
-    <title>Experience | William Newkirk</title>
+    <meta name="description" content="William Newkirk's experience — work, athletics, and volunteering.">
+    <title>Experience — William Newkirk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="scroll-progress"></div>
-    <canvas id="neural-net"></canvas>
-
-    <div class="container">
-        <nav class="glass-panel">
-            <a href="index.html" class="logo">
-                <span class="logo-bracket">&lt;</span>WN<span class="logo-bracket">/&gt;</span>
-            </a>
+    <header class="site-header">
+        <a href="index.html" class="site-name">William Newkirk</a>
+        <nav>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -28,159 +21,93 @@
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="nav-actions">
-                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
-            </div>
+            <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">Menu</button>
         </nav>
+    </header>
 
-        <main>
-            <header class="page-header reveal">
-                <h1>Experience</h1>
-                <p>Work, internships, athletics, and community service.</p>
-            </header>
+    <main class="wrap">
+        <section class="section">
+            <h1>Experience</h1>
 
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-briefcase"></i> Work &amp; Internships<span class="accent-bar"></span></h2>
-                <div class="timeline">
-                    <article class="timeline-item reveal">
-                        <div class="timeline-head">
-                            <h3>El Pomar Institute for Innovation and Commercialization</h3>
-                            <span class="date">Jun 2023 – Aug 2023</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Intern</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Colorado Springs, CO</span>
-                        </div>
-                        <ul>
-                            <li>Collaboratively designed wireframes and mockups for front-end web applications across the design, development, and implementation phases.</li>
-                            <li>Redesigned the company's overall website with a team to foster broader community outreach.</li>
-                            <li>Worked alongside professionals on iterative design and stakeholder feedback cycles.</li>
-                        </ul>
-                    </article>
+            <h2>Work</h2>
 
-                    <article class="timeline-item green reveal">
-                        <div class="timeline-head">
-                            <h3>Broadmoor Manitou and Pikes Peak Cog Railway</h3>
-                            <span class="date">Jun 2023 – Aug 2023</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Ticket Agent</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Manitou Springs, CO</span>
-                        </div>
-                        <ul>
-                            <li>Answered customer service calls, responded to emails, and assisted guests on-site for one of Colorado's most iconic mountain railways.</li>
-                            <li>Scanned tickets and helped manage daily passenger flow during peak summer operations.</li>
-                            <li>Built customer-service skills and learned how to navigate a fast-paced business environment.</li>
-                        </ul>
-                    </article>
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>El Pomar Institute for Innovation and Commercialization</h3>
+                    <span class="when">Summer 2023</span>
                 </div>
-            </section>
-
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-running"></i> Athletics<span class="accent-bar"></span></h2>
-                <div class="timeline">
-                    <article class="timeline-item reveal">
-                        <div class="timeline-head">
-                            <h3>Washington University — Student-Athlete</h3>
-                            <span class="date">Aug 2025 – Present</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">NCAA D-III · Cross Country &amp; Track</span>
-                            <span><i class="fas fa-map-marker-alt"></i> St. Louis, MO</span>
-                        </div>
-                        <ul>
-                            <li>Competing year-round in Cross Country and Indoor/Outdoor Track &amp; Field at the NCAA Division III level.</li>
-                            <li>Balancing a rigorous Business &amp; Computer Science curriculum with daily training and team commitments.</li>
-                        </ul>
-                    </article>
-
-                    <article class="timeline-item green reveal">
-                        <div class="timeline-head">
-                            <h3>Cheyenne Mountain HS — Varsity XC &amp; Track</h3>
-                            <span class="date">Aug 2021 – May 2025</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Varsity Athlete</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Colorado Springs, CO</span>
-                        </div>
-                        <ul>
-                            <li>Four-year varsity contributor in Cross Country and Track &amp; Field.</li>
-                            <li>Earned <strong>Nike Indoor All-American</strong> honors in Winter 2025.</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <section class="page-section reveal">
-                <h2 class="section-heading"><i class="fas fa-hands-helping"></i> Community &amp; Volunteering<span class="accent-bar"></span></h2>
-                <div class="timeline">
-                    <article class="timeline-item reveal">
-                        <div class="timeline-head">
-                            <h3>Bear Cubs Running Club</h3>
-                            <span class="date">Sept 2025 – Present</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Volunteer</span>
-                            <span><i class="fas fa-map-marker-alt"></i> St. Louis, MO</span>
-                        </div>
-                        <ul>
-                            <li>Volunteer with local children with special needs, helping develop motor and social skills through running.</li>
-                        </ul>
-                    </article>
-
-                    <article class="timeline-item green reveal">
-                        <div class="timeline-head">
-                            <h3>Springs Rescue Mission</h3>
-                            <span class="date">May 2025 – Present</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Volunteer</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Colorado Springs, CO</span>
-                        </div>
-                        <ul>
-                            <li>Cook and distribute food at a local homeless shelter, supporting one of Colorado Springs' largest outreach organizations.</li>
-                        </ul>
-                    </article>
-
-                    <article class="timeline-item amber reveal">
-                        <div class="timeline-head">
-                            <h3>Fellowship of Christian Athletes (FCA)</h3>
-                            <span class="date">2021 – Present</span>
-                        </div>
-                        <div class="timeline-meta">
-                            <span class="role">Member</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Colorado &amp; Missouri</span>
-                        </div>
-                        <ul>
-                            <li>Active in FCA at both Cheyenne Mountain HS and Washington University — leadership, mentorship, and community.</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <section class="page-section reveal">
-                <div class="glass-panel hover-lift cta-panel">
-                    <h2 class="section-title">Want to work together?</h2>
-                    <p class="lead cta-copy">I'm always interested in new opportunities — internships, collaborations, or just a conversation.</p>
-                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer glass-panel">
-            <div class="footer-row">
-                <p>&copy; 2026 William Newkirk · Built with HTML, CSS &amp; JS</p>
-                <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/william-newkirk" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/williamjnewkirk" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:williamnewkirk2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
+                <p class="where">Intern &middot; Colorado Springs, CO</p>
+                <ul>
+                    <li>Designed wireframes and mockups for front-end web applications across the design, development, and implementation phases.</li>
+                    <li>Worked with a team to redesign the organization's website to support broader community outreach.</li>
+                </ul>
             </div>
-        </footer>
 
-        <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-    </div>
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Broadmoor Manitou and Pikes Peak Cog Railway</h3>
+                    <span class="when">Summer 2023</span>
+                </div>
+                <p class="where">Ticket Agent &middot; Manitou Springs, CO</p>
+                <ul>
+                    <li>Answered customer calls and emails, assisted on-site guests, and managed ticket scanning during peak summer operations.</li>
+                </ul>
+            </div>
+
+            <h2>Athletics</h2>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Washington University &mdash; Cross Country &amp; Track</h3>
+                    <span class="when">Aug 2025 &ndash; Present</span>
+                </div>
+                <p class="where">NCAA Division III Student-Athlete &middot; St. Louis, MO</p>
+                <ul>
+                    <li>Competing year-round in cross country and indoor/outdoor track and field.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Cheyenne Mountain HS &mdash; Cross Country &amp; Track</h3>
+                    <span class="when">Aug 2021 &ndash; May 2025</span>
+                </div>
+                <p class="where">Varsity Athlete &middot; Colorado Springs, CO</p>
+                <ul>
+                    <li>Four-year varsity runner; earned Nike Indoor All-American honors in Winter 2025.</li>
+                </ul>
+            </div>
+
+            <h2>Volunteering</h2>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Bear Cubs Running Club</h3>
+                    <span class="when">Sept 2025 &ndash; Present</span>
+                </div>
+                <p class="where">St. Louis, MO</p>
+                <ul>
+                    <li>Volunteer with local kids with special needs, helping develop motor and social skills through running.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Springs Rescue Mission</h3>
+                    <span class="when">May 2025 &ndash; Present</span>
+                </div>
+                <p class="where">Colorado Springs, CO</p>
+                <ul>
+                    <li>Cook and distribute meals at a local homeless shelter.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>&copy; 2026 William Newkirk</span>
+        <span>Colorado Springs &middot; St. Louis</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
