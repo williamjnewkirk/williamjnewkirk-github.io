@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; base-uri 'self'; frame-ancestors 'none'; object-src 'none'">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="description" content="William Newkirk's projects — Polyscope and CoursePilot.">
+    <meta name="description" content="William Newkirk's projects — Newkirk Technologies LLC, Polyscope, and CoursePilot.">
     <title>Projects — William Newkirk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +32,33 @@
         <section class="section">
             <h1>Projects</h1>
 
+            <div class="brand">
+                <img src="Images/NewkirkTechLogo-web.png" alt="Newkirk Technologies logo" class="brand-mark" width="104" height="104">
+                <div>
+                    <h2>Newkirk Technologies LLC</h2>
+                    <p class="tagline">Software, built and shipped by one person.</p>
+                </div>
+            </div>
+            <p>
+                Newkirk Technologies is my single-member LLC, founded in 2026 &mdash; a one-person
+                software studio where I design, build, ship, and support mobile and web products end
+                to end. Client work covers custom business websites, native-quality iOS apps in React
+                Native, and lean MVP builds with real backends and authentication. Everything below
+                is built and released under it.
+            </p>
+            <p class="project-links">
+                <a href="https://newkirktechnologies.com" target="_blank" rel="noopener noreferrer">newkirktechnologies.com</a>
+                <a href="mailto:newkirk@newkirktechnologies.com">newkirk@newkirktechnologies.com</a>
+            </p>
+
+            <h2 class="group">Products</h2>
+
             <div class="entry">
                 <div class="entry-head">
-                    <h3>Polyscope &mdash; iOS App</h3>
+                    <div class="entry-title">
+                        <img src="Images/Polyscope-logo-web.png" alt="Polyscope logo" class="entry-mark" width="44" height="44">
+                        <h3>Polyscope &mdash; iOS App</h3>
+                    </div>
                     <span class="when">2026 &ndash; Present</span>
                 </div>
                 <p class="where">React Native &middot; TypeScript &middot; Supabase &middot; Deno &middot; Fly.io &middot; Claude API</p>
@@ -42,13 +66,37 @@
                     <li>Built and shipped a full-stack iOS app that tracks Polymarket prediction-market &ldquo;whale&rdquo; wallets in real time &mdash; a live trade feed, high-conviction signal alerts, a whale leaderboard, and a Claude-powered AI trade advisor.</li>
                     <li>Architected an always-on Deno polling worker on Fly.io that queries Polymarket's public APIs every ~5 seconds and fans trade data to clients via Supabase Realtime and Postgres with row-level security.</li>
                     <li>Integrated Clerk authentication (Sign in with Apple/Google, biometrics), push notifications, analytics, and crash monitoring; automated builds and App Store releases with EAS CI/CD.</li>
-                    <li>Published on the App Store in the Finance category.</li>
+                    <li>Published on the App Store in the Finance category; free to download with a $5.99/month Pro tier.</li>
                 </ul>
                 <p class="project-links">
                     <a href="https://apps.apple.com/us/app/polyscope/id6772628383" target="_blank" rel="noopener noreferrer">App Store</a>
                     <a href="https://polyscopeapp.com" target="_blank" rel="noopener noreferrer">polyscopeapp.com</a>
                 </p>
             </div>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>BearBoard &mdash; Team Training Dashboard</h3>
+                    <span class="when">In development</span>
+                </div>
+                <p class="where">iOS &middot; Android &middot; Web</p>
+                <ul>
+                    <li>Training and roster dashboard for collegiate cross country and track coaches and their athletes, built from my own experience as a Division III runner.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Reminis &mdash; iOS App</h3>
+                    <span class="when">In development</span>
+                </div>
+                <p class="where">iOS</p>
+                <ul>
+                    <li>Turns your camera roll into an infinite short-form video feed, so old photos and clips resurface the way a social feed does.</li>
+                </ul>
+            </div>
+
+            <h2 class="group">Other Work</h2>
 
             <div class="entry">
                 <div class="entry-head">

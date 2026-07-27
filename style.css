@@ -145,6 +145,8 @@ li { margin-bottom: 0.3rem; }
    ------------------------------------------------------------------ */
 .section { margin-top: 36px; }
 .section h2 { margin-top: 0; }
+/* Subheading that starts a new group partway down a section */
+.section h2.group { margin-top: 2.4rem; }
 
 .muted { color: var(--text-muted); }
 .faint { color: var(--text-faint); font-size: 0.9rem; }
@@ -171,6 +173,45 @@ li { margin-bottom: 0.3rem; }
 }
 .entry ul { margin: 6px 0 0; }
 .entry ul li { color: var(--text-muted); }
+
+/* Brand block — logo beside a name/tagline (Newkirk Technologies) */
+.brand {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.brand-mark {
+    width: 104px;
+    height: 104px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+.brand h2 { margin: 0 0 4px; }
+.brand .tagline {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Small logo inside an experience/project entry heading */
+.entry-head:has(.entry-title) { align-items: center; }
+.entry-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.entry-title h3 { margin: 0; }
+.entry-mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+}
 
 /* Project links — small inline row under an entry */
 .project-links {
@@ -367,5 +408,7 @@ button.btn:disabled { opacity: 0.6; cursor: default; }
         text-align: left;
     }
     .intro img.portrait { width: 96px; height: 96px; }
+    .brand { grid-template-columns: 1fr; gap: 14px; }
+    .brand-mark { width: 88px; height: 88px; }
     .skills { columns: 1; }
 }
